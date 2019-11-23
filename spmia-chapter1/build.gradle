@@ -1,26 +1,19 @@
 allprojects  {
-  apply plugin: 'maven'
-
-  group = 'com.thoughtmechanix'
-version = '0.0.1-SNAPSHOT'
+    apply plugin: 'maven'
+    group = 'com.thoughtmechanix'
+    version = '0.0.1-SNAPSHOT'
 }
 
 subprojects {
-  apply plugin: 'java'
-  sourceCompatibility = 1.5
-  targetCompatibility = 1.5
-  tasks.withType(JavaCompile) {
-  	options.encoding = 'UTF-8'
-  }
+    apply plugin: 'java'
+        sourceCompatibility = 1.5
+        targetCompatibility = 1.5
+        tasks.withType(JavaCompile) {
+            options.encoding = 'UTF-8'
+        }
 
-  
-  repositories {
-    mavenLocal()
-    
-    maven { url "https://repo.maven.apache.org/maven2" }
-  }
-
-  
-  
-  
+    repositories {
+        mavenLocal()
+        maven { url "https://repo.maven.apache.org/maven2" }
+    }
 }
