@@ -1,1 +1,3 @@
 rootProject.name = 'tmx-parent-pom'
+
+include 'simpleservice'
